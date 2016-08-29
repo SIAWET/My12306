@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<!--    fragment静态加载
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/btnquit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="65dp"
+        android:background="@color/exit"
+        android:textColor="@color/white"
+        android:text="@string/Exit" />
+
+
+    -->  
+    <!-- 
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+	    <fragment android:name="com.neuedu.my12306.MyFragment"
+	       android:id="@+id/my_fragment"
+	       android:layout_weight="1"
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	        />
+	   <fragment android:name="com.neuedu.my12306.OrderFragment"
+	       android:id="@+id/order_fragment"
+	       android:layout_weight="2"
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	        />
+	   <fragment android:name="com.neuedu.my12306.TicketFragment"
+	       android:id="@+id/ticket_fragment"
+	       android:layout_weight="1"
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	        />
+	</LinearLayout>
+	 -->
+</RelativeLayout>

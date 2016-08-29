@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QueryResultActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1" >
+
+        <Button
+            android:id="@+id/beforDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8dp"
+            android:text="前一天" />
+
+        <Button
+            android:id="@+id/afterDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="8dp"
+            android:text="后一天" />
+       <TextView
+            android:id="@+id/content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/afterDay"
+            android:layout_toRightOf="@+id/beforDay"
+            android:gravity="center_horizontal"
+            android:textSize="15dp"
+            android:text="aaaaa" />
+
+       <TextView
+           android:id="@+id/content1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/content2"
+           android:layout_alignRight="@+id/content2"
+           android:layout_below="@+id/content2"
+           android:gravity="center_horizontal"
+           android:text="aaaaa" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <ListView
+            android:id="@+id/QueryResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

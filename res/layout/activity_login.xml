@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity" >
+	
+    <ImageView 
+        android:id="@+id/ivLogin"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/user_male4_50"
+	    android:contentDescription="@string/LoginIv"/>
+    
+   <EditText 
+       android:id="@+id/edtUsername"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/ivLogin"
+       android:paddingLeft="5dp"
+       android:layout_marginTop="40dp"
+       android:drawablePadding="12dp"
+       android:hint="@string/input_edt"
+       android:drawableLeft="@drawable/administrator_25"
+       android:inputType="text"/>
+   
+   <EditText 
+       android:id="@+id/edtPassword"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/edtUsername"
+       android:layout_marginTop="20dp"
+       android:paddingLeft="5dp"
+       android:drawablePadding="14dp"
+       android:hint="@string/pass_edt"
+       android:drawableLeft="@drawable/lock_25"
+       android:inputType="textPassword"
+       />
+   
+    <Button
+	      android:id="@+id/btnLogin"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_below="@id/edtPassword"
+	      android:layout_marginTop="30dp"
+	      android:background="@color/myblue"
+	      android:textSize="@dimen/font_size"
+	      android:text="@string/login" />
+    
+    <CheckBox 
+       android:id="@+id/cbAutoLogin"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/btnLogin"
+       android:layout_alignLeft="@id/btnLogin"
+       android:layout_marginTop="20dp"
+       android:checked="true"
+       android:text="@string/atuoLogin"/>
+    
+    <TextView 
+        android:id="@+id/tvLostPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_alignRight="@id/btnLogin"
+        android:layout_alignBottom="@id/cbAutoLogin"
+        android:layout_alignBaseline="@id/cbAutoLogin"
+        android:text="@string/LostPassword"/>
+   
+</RelativeLayout>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:id="@+id/seatTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="无座"/>
+    <TextView 
+        android:id="@+id/numberTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10张"/>
+    <TextView 
+        android:id="@+id/priceTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥118.0"/>
+
+    <Button
+        android:id="@+id/btnYuDing"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/myblue"
+        android:text="预定"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

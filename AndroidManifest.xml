@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neuedu.my12306"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="18"
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/abc"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Mainbar" >
+        <activity
+            android:name="com.neuedu.my12306.LoginActivity"
+            android:label="@string/login" >
+        </activity>
+        <activity
+            android:name="com.neuedu.my12306.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.neuedu.my12306.my.MyContactActivity"
+            android:label="@string/title_activity_my_contact" >
+        </activity>
+        <activity
+            android:name="com.neuedu.my12306.my.MyAccountActivity"
+            android:label="@string/title_activity_my_account" >
+        </activity>
+        <activity
+            android:name="com.neuedu.my12306.my.MyPasswordActivity"
+            android:label="@string/title_activity_my_password" >
+        </activity>
+        <activity
+            android:name="com.neuedu.my12306.SplashActivity"
+            android:label="@string/title_activity_splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.neuedu.my12306.my.MyNewContactActivity"
+            android:label="@string/title_activity_my_new_contact" >
+        </activity>
+        <activity
+            android:name="com.neuedu.my12306.my.MyEditContactActivity"
+            android:label="@string/title_activity_my_edit_contact" >
+        </activity>
+
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.neuedu.my12306.stationlist.StationListActivity"
+            android:label="@string/title_activity_station_list" >
+        </activity>
+        <activity
+            android:name="com.neuedu.my12306.ticket.QueryResultActivity"
+            android:label="@string/title_activity_query_result" >
+        </activity>
+        <activity
+            android:name="com.neuedu.my12306.ticket.YuDingTicketActivity"
+            android:label="@string/title_activity_yu_ding_ticket" >
+        </activity>
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Tests for My App"
+        android:targetPackage="com.neuedu.my12306" />
+
+</manifest>
